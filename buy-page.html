@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <main class="wrapper">
+
+        <div id="product-page" class="product-page">
+            <div class="box">
+                <h1>PRODUCT DETAILS</h1>
+                <img src="spalding.jpg" width="100px" height="100px">
+                <h3>SPALDING</h3>
+                <p>Shipping To: Cagayan de Oro City</p>
+                <p>Shipping Fee: 50.00 PHP</p>
+
+                <div class="button">
+                    <p>quantity: <span id="quantity">1</span></p>
+                    <button onclick="subQuantity()">-</button>
+                    <button onclick="addQuantity()">+</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>READY TO CHECKOUT?</h1>
+                <div class="division">
+                    <h3>Subtotal</h3>
+                    <p><span id="subtotal">500</span></p>
+                </div>
+                <div class="division">
+                    <h3>Quantity</h3>
+                    <p><span id="qty">1</span></p>
+                </div>
+                <div class="division">
+                    <h3>Shipping</h3>
+                    <p><span id="shipping">50</span></p>
+                </div>
+                <div class="division">
+                    <h3>TOTAL</h3>
+                    <p><span id="total">550</span></p>
+                </div>
+                <div class="button">
+                    <a href="#check-out-page    ">
+                        <button onclick="checkout()">CHECKOUT</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="check-out-page" class="check-out-page" style="display: none;">
+            <div class="box">
+                <img src="spalding.jpg" width="100px" height="100px">
+                <h1>SPALDING</h1>
+                <p>500.00 php</p>
+    
+                <div class="check-division">
+                    <h3>Quantity</h3>
+                    <p><span id="check-qty">1</span></p>
+                </div>
+                <div class="check-division">
+                    <h3>Shipping</h3>
+                    <p><span id="shipping">50</span></p>
+                </div>
+                <div class="check-division">
+                    <h3>TOTAL</h3>
+                    <p><span id="check-total">550</span></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    
+
+    
+</body>
+</html>
